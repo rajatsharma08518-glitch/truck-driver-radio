@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#r1{
+    width: 520px;
+    background: transparent;
+    color: #fff;
+    padding: 30px 40px;
+  }
+
+  #r1 h1{
+    text-align: center;
+    font-size: 66px;
+  }
+
+   #r2 h2 {
+    color: gray;
+    font-size: clamp(14px, 2vw, 20px);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+#search-box {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#search {
+    width: 100%;
+    height: 44px;
+    margin: 30px 0;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #222;
+}
+
+#search::placeholder {
+    color: gray;
+}
+
+#song-card {
+    width: 100%;
+    min-height: 75px;
+
+    
+   
+    align-items: center;
+
+    padding: 8px 12px;
+    margin-top: 10px;
+
+    border-radius: 18px;
+
+    background: rgba(10, 10, 25, 0.75);
+   margin-bottom: 0px;
+}
+
+#song-card video {
+    width: 95px;
+    height: 59px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    
+}
+
+#song-info {
+    margin-left: 12px;
+    padding: 0;
+}
+
+#song-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+#song-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #aaa;
+}
+
+#current-time{
+    color: #fff;
+}
+#spotify-button {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+
+    z-index: 1000;
+
+    border: none;
+    outline: none;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    background: #1DB954;
+    color: white;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    transition: 0.2s;
+}
+
+#spotify-button:hover {
+    transform: scale(1.05);
+    background: #1ed760;
+}
